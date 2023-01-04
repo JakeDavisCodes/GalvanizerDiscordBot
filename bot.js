@@ -70,19 +70,23 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         to: channelID,
         message: help()
       });
+    } else if (cmd === 'git') {
+      bot.sendMessage({
+        to: channelID,
+        message: 'https://github.com/JakeDavisCodes/GalvanizerDiscordBot'
+      });
+    }else {
+      bot.sendMessage({
+        to: channelID,
+        message: "What did you say? ( ͡° ͜ʖ ͡°)"
+      });
     }
   } else if (message.includes('@' + bot.username) > -1 && userID !== bot.id) {
     bot.sendMessage({
       to: channelID,
       message: '**WHO DARES TO SUMMON ME**'
     });
-
   } else {
-    if (userID !== bot.id) {
-      bot.sendMessage({
-        to: channelID,
-        message: "What did you say? ( ͡° ͜ʖ ͡°)"
-      });
-    }
+
   }
 });
