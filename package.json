@@ -1,0 +1,22 @@
+{
+
+  "name": "galvanizer",
+
+  "version": "1.0.0",
+
+  "description": "Da Guy",
+
+  "main": "bot.js",
+
+  "author": "Jacob Davis",
+
+  "dependencies": {
+
+    "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+
+    "winston": "^3.8.2"
+
+  }
+
+}
+
